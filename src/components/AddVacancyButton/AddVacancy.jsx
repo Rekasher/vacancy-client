@@ -85,7 +85,7 @@ const CreateVacancyModal = ({isOpen, isUpdate, onClose, createVacancy, updateVac
             aria-describedby="parent-modal-description"
         >
             <Box sx={{...style, width: 600}}>
-                <h2 className='modal-title'>Add new vacancy</h2>
+                <h2 className='modal-title'> {isUpdate ? "Update vacancy" : "Add new vacancy"}</h2>
                 <TextField
                     id="filled-multiline-flexible"
                     name="company"
