@@ -1,7 +1,9 @@
 import axios from "axios";
 
 
-const serverApi = process.env.SERVER_URL;
+
+
+const serverApi = process.env.REACT_APP_SERVER_URL;
 
 const apiServer = axios.create({
     baseURL: serverApi,
